@@ -57,4 +57,5 @@ export type GameResult = {
   miss: number;
   rank: string;
   syncPercent: number;
+  maxCombo: number;
 };
