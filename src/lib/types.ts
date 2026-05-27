@@ -1,10 +1,3 @@
-export type CountryEconomics = {
-  name: string;
-  medianAnnualIncomeUSD: number;
-  avgRentMonthlyUSD: number;
-  colIndex: number;
-};
-
 export type GeoData = {
   city: string;
   region: string;
@@ -12,34 +5,56 @@ export type GeoData = {
   countryCode: string;
   latitude: number;
   longitude: number;
-  timezone: string;
 };
 
 export type VisitorSignals = {
-  language: string;
-  languages: string[];
   timezone: string;
   localTime: string;
-  dayOfWeek: string;
   hour: number;
+  dayOfWeek: string;
+  season: string;
+  language: string;
+  languages: string[];
   device: "mobile" | "tablet" | "desktop";
-  screenBucket: string;
+  os: string;
+  browser: string;
+  screen: string;
+  pixelRatio: number;
+  colorDepth: number;
+  touch: boolean;
+  cores: number;
+  memoryGB: number | null;
+  connection: string;
   prefersDark: boolean;
-  isReturning: boolean;
-  visitCount: number;
+  prefersReducedMotion: boolean;
+  cookiesEnabled: boolean;
   referrer: string;
+  visitCount: number;
+  isReturning: boolean;
 };
 
-export type MillionReport = {
+export type SignalProfile = {
   geo: GeoData;
-  visitor: VisitorSignals;
-  millionId: string;
-  yearsToEarn: number;
-  rentYears: number;
-  coffeeCups: number;
-  millionPower: number;
-  nycComparison: string;
-  hourRarity: number;
-  headline: string;
-  subheadline: string;
+  signals: VisitorSignals;
+  signalId: string;
+  archetype: Archetype;
+  colors: { primary: string; glow: string; accent: string };
+  beatWindowMs: number;
+  glyphSeed: number;
+};
+
+export type Archetype = {
+  name: string;
+  title: string;
+  tagline: string;
+  trait: string;
+};
+
+export type GameResult = {
+  score: number;
+  perfect: number;
+  good: number;
+  miss: number;
+  rank: string;
+  syncPercent: number;
 };

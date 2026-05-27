@@ -1,5 +1,5 @@
-import { MillionReport } from "@/components/MillionReport";
+import { SignalExperience } from "@/components/SignalExperience";
 
 export default function Home() {
-  return <MillionReport />;
+  return <SignalExperience />;
 }
