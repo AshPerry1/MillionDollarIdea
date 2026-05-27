@@ -1,26 +1,19 @@
 # Million Dollar Idea
 
-Marketing site for **Million Dollar Idea**, built with [Next.js](https://nextjs.org).
+Placeholder site for **Million Dollar Idea**. Hosted on GitHub Pages — no local server required.
+
+**Live site:** [ashperry1.github.io/MillionDollarIdea](https://ashperry1.github.io/MillionDollarIdea/)
 
 **Repository:** [github.com/AshPerry1/MillionDollarIdea](https://github.com/AshPerry1/MillionDollarIdea)
 
-## Local development
+## How it works
 
-```bash
-npm install
-npm run dev
-```
+1. Edit files in this repo (GitHub web editor, Codespaces, or your editor).
+2. Push to `main`.
+3. GitHub Actions builds and deploys automatically.
 
-Open [http://localhost:3000](http://localhost:3000).
+## First-time setup (one time)
 
-## Push to GitHub
+In the repo on GitHub: **Settings → Pages → Build and deployment → Source** → choose **GitHub Actions**.
 
-After you commit changes:
-
-```bash
-git push -u origin main
-```
-
-## Deploy
-
-Connect this repo to [Vercel](https://vercel.com) or [Netlify](https://netlify.com) for automatic deploys on every push to `main`.
+After the first push with the deploy workflow, your site will be live at the URL above.
