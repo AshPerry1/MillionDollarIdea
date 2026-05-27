@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Million Dollar Idea",
-  description: "Something big is on the way.",
+  title: "Your Real Million — What $1M Means Where You Are",
+  description:
+    "Get a personalized million-dollar report based on your city, time, and visit. See how long it takes to earn $1M near you and share your unique Million ID.",
+  openGraph: {
+    title: "Your Real Million",
+    description:
+      "A million isn't the same everywhere. Discover yours in 10 seconds.",
+  },
 };
 
 export default function RootLayout({

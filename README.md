@@ -1,19 +1,21 @@
-# Million Dollar Idea
+# Million Dollar Idea — Your Real Million
 
-Placeholder site for **Million Dollar Idea**. Hosted on GitHub Pages — no local server required.
+**The idea:** A million dollars isn’t the same number everywhere. People visit to see what *their* million looks like — earning time, rent years, purchasing power vs NYC, and a unique **Million ID** built from where and when they landed on the site.
 
 **Live site:** [ashperry1.github.io/MillionDollarIdea](https://ashperry1.github.io/MillionDollarIdea/)
 
-**Repository:** [github.com/AshPerry1/MillionDollarIdea](https://github.com/AshPerry1/MillionDollarIdea)
+## What makes each visit unique
 
-## How it works
+- City & country (IP geolocation)
+- Local time, day, timezone, language
+- Device, screen size, dark/light mode
+- Return visits (browser storage)
+- Referrer
 
-1. Edit files in this repo (GitHub web editor, Codespaces, or your editor).
-2. Push to `main`.
-3. GitHub Actions builds and deploys automatically.
+No signup. No idea generator — just a shareable personal wealth context report.
 
-## First-time setup (one time)
+## Deploy
 
-In the repo on GitHub: **Settings → Pages → Build and deployment → Source** → choose **GitHub Actions**.
+Push to `main` → GitHub Actions deploys to GitHub Pages.
 
-After the first push with the deploy workflow, your site will be live at the URL above.
+**Settings → Pages → Source:** GitHub Actions
